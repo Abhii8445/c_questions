@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int i = 65;
+    int k = 120;
+    printf(" value of i=%d k=%d before swapping\n", i, k);
+
+    i = i ^ k;
+    printf("value of i=%d after swapping\n", i);
+    k = i ^ k;
+    printf("value of i=%d after swapping\n", k);
+    i = i ^ k;
+    printf("value of i=%d after swapping\n", i);
+    return 0;
+}
