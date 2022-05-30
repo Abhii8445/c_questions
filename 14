@@ -1,0 +1,45 @@
+#include <stdio.h>
+int main(){
+    int n,first,last;
+    printf("Enter a positive integer: ");
+    scanf("%d",&n);
+    last = n%10;
+    first = n;
+    while (first>=10)  //it mean first is not greater than 10 so answer is anything it give not greater than 10
+    {
+        first = first/10;
+    }
+    printf("%d\n",first);
+    printf("%d\n",last);
+    return 0;
+}
+
+#include <stdio.h>
+int main(){
+    int n,first,last;
+    printf("Enter a positive integer: ");
+    scanf("%d",&n);
+    last = n%10;
+    for (first = n ;first>=10;first+=0)
+    {
+        first = first/10;
+    }
+    printf("%d\n",first);
+    printf("%d\n",last);
+    return 0;
+}
+
+#include <stdio.h>
+int main(){
+    int n,first,last;
+    printf("Enter a positive integer: ");
+    scanf("%d",&n);
+    last = n%10;
+    first = n;
+    do{
+      first = first/10;
+    } while (first>=10);
+    printf("%d\n",first);
+    printf("%d\n",last);
+  return 0;
+}
