@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <math.h>
+
+int fabo(int x,int y);
+int main(){
+    int a,x,b;
+
+    printf("enter 1 st limit");
+    scanf("%d",&a);
+    printf("enter 2nd limit");
+    scanf("%d",&b);
+    fabo(a,b);
+
+    return 0;
+}
+int fabo(int x,int y){
+    int i,p,n1,n2,s,j=0,l=0;
+    
+    for (i = x; i <= y; i++)
+    {
+        n1 = i;
+        n2 = i;
+        int j=0;
+        while (n1>0)
+        {
+            n1 = n1/10;
+            ++j;
+        }
+        while (n2>0)
+        {
+            s = n2%10;
+            l = l+pow(s,j);
+            n2 = n2/10;
+        }
+        if (l==i){
+            printf("%d is armstrong\n",i);
+        }
+        j = 0;
+        l = 0;
+    }
+}
