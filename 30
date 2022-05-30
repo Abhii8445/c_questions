@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(){
+    int i=54;
+    int *j = &i;
+    int **k = &j;
+    printf("%u\n",**k);
+    printf("%u\n",*&i);
+    return 0;
+}
